@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 21px;
+  color: $complementary-color;
+  z-index: 4;
+
+  &__link {
+    color: $complementary-color;
+    transition: color 0.3s linear;
+
+    &--top {
+      font-weight: 700;
+    }
+
+    &--bottom {
+      font-weight: 400;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

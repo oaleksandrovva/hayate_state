@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  gap: 35px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+
+  &__link {
+    color: $main-color;
+    text-transform: uppercase;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $complementary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .menu {
+    flex-direction: column;
+  }
+}
+

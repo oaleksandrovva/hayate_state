@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 736px;
+  background: no-repeat top 0 left -250px url('../images/header_wrapper.png') #fff;
+
+  &__info {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 92px 0 240px;
+  }
+}
+
+@media screen and (min-width: $normal-screen) {
+  .header {
+    background: no-repeat top 0 left 0 url('../images/header_wrapper.png') #fff;
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  .header {
+    background: no-repeat top 0 left 100px url('../images/header_wrapper.png') #fff;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .header {
+    &__info {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.top {
+  display: flex;
+  justify-content: flex-start;
+
+  &__logo {
+    width: 150px;
+    height: 117px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: $normal-screen) {
+  .top {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: $small-screen) {
+  .top {
+    flex-direction: column;
+    align-self: flex-end;
+    z-index: 1;
+  }
+}

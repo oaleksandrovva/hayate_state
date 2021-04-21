@@ -1,0 +1,155 @@
+.info {
+  &__block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 369px;
+    overflow: hidden;
+  }
+
+  &__content {
+    width: 437px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    z-index: 4;
+  }
+
+  &__button {
+    padding: 15px 70px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $main-backgroung-color;
+    text-transform: uppercase;
+    border: 3px solid $complementary-color;
+    background-color: $complementary-color;
+    transition: background-color 0.3s linear;
+    cursor: pointer;
+    z-index: 4;
+
+    &:hover {
+      color: $complementary-color;
+      background-color: $main-backgroung-color;
+    }
+  }
+
+  &__square {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 600px;
+    background-color: $main-color;
+    z-index: 1;
+  }
+
+  &__image {
+    position: absolute;
+    top: 150px;
+    right: 90px;
+    z-index: 2;
+  }
+
+  &__photo {
+    width: 545px;
+    height: 415px;
+  }
+
+  &__dots {
+    position: absolute;
+    top: 162px;
+    right: 257px;
+    width: 100px;
+    height: 370px;
+    z-index: 3;
+  }
+
+  &__rectangle {
+    position: absolute;
+    left: 0;
+    width: 364px;
+    height: 12px;
+    margin-top: 231px;
+    background-color: $complementary-color;
+  }
+}
+
+@media screen and (min-width: $normal-screen) {
+  .info {
+    &__square {
+      width: 38vw;
+    }
+
+    &__image {
+      right: 150px;
+    }
+
+    &__dots {
+      right: 357px;
+    }
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  .info {
+    &__image {
+      right: 300px;
+    }
+
+    &__dots {
+      right: 357px;
+    }
+  }
+}
+
+@media screen and (min-width: $small-screen) and (max-width: $regular-screen) {
+  .info {
+    &__content {
+      color: #fff;
+      z-index: 4;
+    }
+
+    &__square {
+      top: 130px;
+      width: 100%;
+    }
+
+    &__rectangle {
+      margin-top: 190px;
+      z-index: 2;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .info {
+    &__block {
+      justify-content: center;
+      gap: 20px;
+    }
+
+    &__content {
+      color: #fff;
+    }
+
+    &__square {
+      top: 200px;
+      width: 100%;
+    }
+
+    &__image {
+      top: 250px;
+      right: 50px;
+    }
+
+    &__photo {
+      max-width: 50vw;
+      object-fit: cover;
+    }
+
+    &__dots {
+      top: 308px;
+      right: 150px;
+    }
+  }
+}
