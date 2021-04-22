@@ -1,11 +1,11 @@
 #About
-landing page includes header with nav, main with seven blocks there and footer. Also there are few animations, buttons and links.
+Header of the landing page Hayat Estate
 
 This page is adaptive to next devices: Notebook (> 1280px), Tablet (> 768px), Mobile (> 320px)
 
 #Links
 - [DEMO LINK](https://oaleksandrovva.github.io/hayate_state/)
-- [Code](https://github.com/yurasokal/hayat_estate)
+- [Code](https://github.com/oaleksandrovva/hayat_estate)
 - [Figma Layout](https://www.figma.com/file/tFhpxP08zTcjEi6DXMnR0A/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1?node-id=73%3A0)
 
 #Technologies
