@@ -31,3 +31,9 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet-screen) {
+  .header {
+    background-image: none;
+  }
+}

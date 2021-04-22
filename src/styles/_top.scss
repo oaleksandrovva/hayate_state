@@ -17,10 +17,16 @@
 }
 
 
-@media screen and (max-width: $small-screen) {
+@media screen and (max-width: $phone-screen) {
   .top {
     flex-direction: column;
     align-self: flex-end;
     z-index: 1;
+
+    &__logo {
+      width: 120px;
+      height: 75px;
+      object-fit: cover;
+    }
   }
 }

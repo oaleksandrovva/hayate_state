@@ -17,9 +17,11 @@
   }
 }
 
-@media screen and (max-width: $small-screen) {
+
+@media screen and (max-width: $phone-screen) {
   .menu {
     flex-direction: column;
+    font-weight: 400;
   }
 }
 

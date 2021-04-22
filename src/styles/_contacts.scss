@@ -6,6 +6,12 @@
   color: $complementary-color;
   z-index: 4;
 
+  &__item {
+    &--hidden {
+      display: none;
+    }
+  }
+
   &__link {
     color: $complementary-color;
     transition: color 0.3s linear;
@@ -20,6 +26,23 @@
 
     &:hover {
       color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .contacts {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .contacts {
+    &__item {
+      &--hidden {
+        display: block;
+        align-self: center;
+      }
     }
   }
 }
